@@ -11,7 +11,7 @@ import org.testng.annotations.AfterClass;
         features = "src/test/resources/features",
         glue = "stepdefs",
         monochrome = true,
-        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber-reports/Cucumber.json"}
 )
 public class TestRunner {
 
